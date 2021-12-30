@@ -42,4 +42,18 @@ function playGame() {
     window.alert("You lose!!")
   }
 
-}
+  // prints stats 
+  window.alert(
+    "Stats:\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties
+  );
+
+  // ask user to play again
+  let playAgain = window.confirm("Play again??")
+
+  if (playAgain) {
+    playGame();
+  }
+};
+
+// init game
+playGame();
